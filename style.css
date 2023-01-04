@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+body{
+  margin: 0;
+}
+
+header{
+  height: 120px;
+  background: pink;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1200px;
+  width: calc(100% - 16px - 16px);
+}
+
+article {
+  background: skyblue;
+}
+
+article + article{
+  margin-top: 32px;
+}
+
+article:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+article{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.content{
+  flex: 1;
+
+}
+
+h1{
+  margin: 0;
+}
+
+footer{
+  background: gray;
+  height: 120px;
+}
